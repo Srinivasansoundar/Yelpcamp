@@ -1,0 +1,58 @@
+<%layout("layouts/boilerplate")%>
+<link rel="stylesheet" href="styles/slide.css">
+    <div class="row mb-3">
+        <div class="col">
+            <div id="carouselExample" class="carousel slide" style="width:100%;">
+                <div class="carousel-inner">
+                    <%slide[0].image.forEach((img,i)=>{%>
+                        <div class="carousel-item <%=i==0? "active":""%>">
+                            <img crossorigin="anonymous" src="<%=img.url%>" class="d-block w-100 im" alt="...">
+                        </div>
+                        <%})%>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    <h1>All campgrounds</h1>
+    <div>
+        <a href="/campground/new">Add Campground</a>
+    </div>
+
+    <%for(let campground of campgrounds){%>
+        <div class="card  mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <%if(campground.image.length){%>
+                        <img crossorigin="anonymous" class="img-fluid" src="<%=campground.image[0].url%>">
+                        <%}else{%>
+                            <img crossorigin="anonymous" class="img-fluid" src="" alt="">
+                            <%}%>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=campground.title%>
+                        </h5>
+                        <p class="card-text">
+                            <%=campground.description%>
+                        </p>
+                        <p class="card-text">
+                            <smal class="text-muted">
+                                <%=campground.location%>
+                            </smal>
+                        </p>
+                        <a class="btn btn-primary" href="/campground/<%=campground._id%>">View <%=campground.title%></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%}%>
