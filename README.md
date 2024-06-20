@@ -20,7 +20,6 @@ Use of MongoDB as the database to store user, campground, and review data.
 Mongoose for object data modeling (ODM) to interact with MongoDB.
 Middleware:
 Use of Express middleware for session management, authentication (using Passport.js), and other functionalities.
-
 Technologies Used:
 Backend:
 Node.js: Server-side JavaScript runtime.
