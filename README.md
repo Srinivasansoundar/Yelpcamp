@@ -112,4 +112,10 @@ below code is review routes
 ![revroutes](https://github.com/user-attachments/assets/1381130f-daba-44a7-8c9a-6b2a381a5706)
 
 below code is the user routes
+
 ![userroutes](https://github.com/user-attachments/assets/4bc61d50-1e0e-44d6-b62a-eee66a967840)
+
+Handling the error
+
+![err-1](https://github.com/user-attachments/assets/63a88e06-6398-42c5-9327-03bfcfecac6a)
+![err-2](https://github.com/user-attachments/assets/0c382885-c1fb-41d8-9912-693c2cdafe73)
