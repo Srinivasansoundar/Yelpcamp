@@ -64,6 +64,7 @@ Passport.js: Authentication middleware for Node.js to handle user login and regi
 if you are a new user you can register,if you are old user you can just log in 
 
 if you did not log in you can not create campground and add review to the other campground,but you can see the campgrounds available
+
 ![authorization](https://github.com/user-attachments/assets/309a3d8a-6599-4d09-bd1f-b18e5e1f664d)
 
 when you login in or create a account it will redirect you to the main page it will look like
@@ -71,6 +72,7 @@ when you login in or create a account it will redirect you to the main page it w
 ![main_page](https://github.com/user-attachments/assets/14a04daa-6b54-4704-8cd3-00e76e24f5d3)
 
 you can see that on the top left you dont see the log in icon because the browser remebers you are logged in using session
+
 ![loginout](https://github.com/user-attachments/assets/e22b0eaf-55fc-4a74-9e68-bbeef9cce6ec)
 ![currentuser](https://github.com/user-attachments/assets/fa7b25b7-14d3-4422-a866-83d94072b9a9)
 
