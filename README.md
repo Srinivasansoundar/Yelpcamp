@@ -119,3 +119,16 @@ Handling the error
 
 ![err-1](https://github.com/user-attachments/assets/63a88e06-6398-42c5-9327-03bfcfecac6a)
 ![err-2](https://github.com/user-attachments/assets/0c382885-c1fb-41d8-9912-693c2cdafe73)
+
+Authentication using password
+
+![image](https://github.com/user-attachments/assets/a87c7a00-da7f-4251-919a-6239c42943ee)
+![image](https://github.com/user-attachments/assets/9ba497d6-8c3f-4b37-b82f-6b0e728b81ec)
+
+Passport.use(new LocalStrategy(User.authenticate())
+
+Passport.serializeUser(User.serializeUser())
+
+Passport.deserializeUser(User.deserialeuser())
+
+
